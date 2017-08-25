@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 11.992 sec <<< FAILURE!
+QueryShopById_testCase1(com.shop.controller.httptest.QueryShopById_HttpTest)  Time elapsed: 0.03 sec  <<< FAILURE!
+java.lang.AssertionError: http返回状态失败！ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.elephtribe.tools.httputils.HttpResult.checkHttpSucess(HttpResult.java:74)
+	at com.shop.controller.httptest.QueryShopById_HttpTest.QueryShopById_testCase1(QueryShopById_HttpTest.java:48)
+UploadDiff_testCase2(com.procurement.controller.httptest.UploadDiff_HttpTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: 接口返回的entry不为'null'.......... expected [{"modifyTime":"2017-07-27 19:39:00","list":[{"matterUrl":"assets/voice/07/20/n_1500531565405_1720.mp3","gmtModify":null,"spu":"","id":28,"gmtCreate":"2017-07-27 19:39:00","matterId":62}]}] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.procurement.controller.httptest.UploadDiff_HttpTest.UploadDiff_testCase2(UploadDiff_HttpTest.java:50)

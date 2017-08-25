@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <test name="shop">
+    <classes>
+      <class name="com.shop.controller.httptest.CreateShop_HttpTest"/>
+      <class name="com.shop.controller.httptest.QueryShopById_HttpTest"/>
+    </classes>
+  </test> <!-- shop -->
+  <test name="procurement">
+    <classes>
+      <class name="com.procurement.controller.httptest.CreateMaterial_HttpTest"/>
+      <class name="com.procurement.controller.httptest.DeleteMaterial_HttpTest"/>
+      <class name="com.procurement.controller.httptest.IsPlay_HttpTest"/>
+      <class name="com.procurement.controller.httptest.SelectActivityList_HttpTest"/>
+      <class name="com.procurement.controller.httptest.SelectMaterialList_HttpTest"/>
+      <class name="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest"/>
+      <class name="com.procurement.controller.httptest.SelectSpuById_HttpTest"/>
+      <class name="com.procurement.controller.httptest.UpdateMaterial_HttpTest"/>
+      <class name="com.procurement.controller.httptest.UploadDiff_HttpTest"/>
+    </classes>
+  </test> <!-- procurement -->
+  <test name="shop(failed)">
+    <classes>
+      <class name="com.procurement.controller.httptest.SelectMaterialList_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectMaterialList_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectSpuById_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectSpuById_HttpTest -->
+      <class name="com.procurement.controller.httptest.UploadDiff_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.UploadDiff_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectActivityList_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectActivityList_HttpTest -->
+      <class name="com.shop.controller.httptest.QueryShopById_HttpTest">
+        <methods>
+          <include name="QueryShopById_testCase2"/>
+          <include name="QueryShopById_testCase1" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.shop.controller.httptest.QueryShopById_HttpTest -->
+      <class name="com.procurement.controller.httptest.IsPlay_HttpTest">
+        <methods>
+          <include name="deleteDB"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.IsPlay_HttpTest -->
+      <class name="com.procurement.controller.httptest.DeleteMaterial_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.DeleteMaterial_HttpTest -->
+      <class name="com.shop.controller.httptest.CreateShop_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.shop.controller.httptest.CreateShop_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest -->
+      <class name="com.procurement.controller.httptest.CreateMaterial_HttpTest">
+        <methods>
+          <include name="deleteDB"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.CreateMaterial_HttpTest -->
+      <class name="com.procurement.controller.httptest.UpdateMaterial_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.UpdateMaterial_HttpTest -->
+    </classes>
+  </test> <!-- shop(failed) -->
+  <test name="procurement(failed)">
+    <classes>
+      <class name="com.procurement.controller.httptest.SelectMaterialList_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectMaterialList_HttpTest -->
+      <class name="com.procurement.controller.httptest.UploadDiff_HttpTest">
+        <methods>
+          <include name="UploadDiff_testCase2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.UploadDiff_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectSpuById_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectSpuById_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectActivityList_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectActivityList_HttpTest -->
+      <class name="com.shop.controller.httptest.QueryShopById_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.shop.controller.httptest.QueryShopById_HttpTest -->
+      <class name="com.procurement.controller.httptest.IsPlay_HttpTest">
+        <methods>
+          <include name="deleteDB"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.IsPlay_HttpTest -->
+      <class name="com.procurement.controller.httptest.DeleteMaterial_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.DeleteMaterial_HttpTest -->
+      <class name="com.shop.controller.httptest.CreateShop_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.shop.controller.httptest.CreateShop_HttpTest -->
+      <class name="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest -->
+      <class name="com.procurement.controller.httptest.CreateMaterial_HttpTest">
+        <methods>
+          <include name="deleteDB"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.CreateMaterial_HttpTest -->
+      <class name="com.procurement.controller.httptest.UpdateMaterial_HttpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteDB"/>
+        </methods>
+      </class> <!-- com.procurement.controller.httptest.UpdateMaterial_HttpTest -->
+    </classes>
+  </test> <!-- procurement(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

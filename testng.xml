@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="shop" >
+        <classes>
+            <class name="com.shop.controller.httptest.CreateShop_HttpTest" />
+            <class name="com.shop.controller.httptest.QueryShopById_HttpTest" />
+        </classes>
+    </test>
+
+    <test name="procurement">
+        <classes>
+            <class name="com.procurement.controller.httptest.AuthorList_HttpTest"/>
+            <class name="com.procurement.controller.httptest.CreateActivity_HttpTest"/>
+            <class name="com.procurement.controller.httptest.CreateMaterial_HttpTest"/>
+            <class name="com.procurement.controller.httptest.DeleteMaterial_HttpTest"/>
+            <class name="com.procurement.controller.httptest.IsPlay_HttpTest"/>
+            <class name="com.procurement.controller.httptest.QueryActivityCreative_HttpTest"/>
+            <class name="com.procurement.controller.httptest.QueryActivityList_HttpTest"/>
+            <class name="com.procurement.controller.httptest.SelectActivityList_HttpTest"/>
+            <class name="com.procurement.controller.httptest.SelectMaterialList_HttpTest"/>
+            <class name="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest"/>
+            <class name="com.procurement.controller.httptest.SelectSpuById_HttpTest"/>
+            <class name="com.procurement.controller.httptest.UpdateMaterial_HttpTest"/>
+            <class name="com.procurement.controller.httptest.UploadDiff_HttpTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="25" failures="2" name="TestSuite" time="11.993" errors="0" skipped="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="xmlFileName" value="testng.xml"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Bytes/Documents/workspace/testCodes/shop-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Bytes/Documents/workspace/testCodes/shop-test"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/1p/kc_kt35521vgxk13224dtqf80000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Bytes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="user.home" value="/Users/Bytes"/>
+    <property name="user.timezone" value="Asia/Harbin"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Bytes"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f pom.xml clean test -DxmlFileName=testng.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/Users/Bytes/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.shop.controller.httptest.CreateShop_HttpTest" name="createShop_TestCase1" time="1.551"/>
+  <testcase classname="com.shop.controller.httptest.CreateShop_HttpTest" name="createShop_TestCase2" time="0.019"/>
+  <testcase classname="com.shop.controller.httptest.QueryShopById_HttpTest" name="QueryShopById_testCase1" time="0.031">
+    <failure message="http返回状态失败！ expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: http返回状态失败！ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.elephtribe.tools.httputils.HttpResult.checkHttpSucess(HttpResult.java:74)
+	at com.shop.controller.httptest.QueryShopById_HttpTest.QueryShopById_testCase1(QueryShopById_HttpTest.java:48)
+</failure>
+    <system-out>返回结果信息：店铺名称可能已存在或者参数错误！
+</system-out>
+  </testcase>
+  <testcase classname="com.shop.controller.httptest.QueryShopById_HttpTest" name="QueryShopById_testCase3" time="0.026"/>
+  <testcase classname="com.shop.controller.httptest.QueryShopById_HttpTest" name="QueryShopById_testCase2" time="0.027">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.procurement.controller.httptest.CreateMaterial_HttpTest" name="CreateMaterial_testCase2" time="0.027"/>
+  <testcase classname="com.procurement.controller.httptest.CreateMaterial_HttpTest" name="createMaterial_testCase1" time="0.915"/>
+  <testcase classname="com.procurement.controller.httptest.DeleteMaterial_HttpTest" name="DeleteMaterial_testCase1" time="0.383"/>
+  <testcase classname="com.procurement.controller.httptest.DeleteMaterial_HttpTest" name="DeleteMaterial_testCase2" time="0.025"/>
+  <testcase classname="com.procurement.controller.httptest.IsPlay_HttpTest" name="IsPlay_testCase1" time="0.012"/>
+  <testcase classname="com.procurement.controller.httptest.IsPlay_HttpTest" name="IsPlay_testCase2" time="0.208"/>
+  <testcase classname="com.procurement.controller.httptest.SelectActivityList_HttpTest" name="selectActivityList_testCase1" time="0.67"/>
+  <testcase classname="com.procurement.controller.httptest.SelectActivityList_HttpTest" name="selectActivityList_testCase2" time="0.03"/>
+  <testcase classname="com.procurement.controller.httptest.SelectActivityList_HttpTest" name="selectActivityList_testCase3" time="0.014"/>
+  <testcase classname="com.procurement.controller.httptest.SelectMaterialList_HttpTest" name="selectMaterialList_testCase1" time="0.231"/>
+  <testcase classname="com.procurement.controller.httptest.SelectMaterialList_HttpTest" name="selectMaterialList_testCase2" time="0.017"/>
+  <testcase classname="com.procurement.controller.httptest.SelectMaterialList_HttpTest" name="selectMaterialList_testCase3" time="0.029"/>
+  <testcase classname="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest" name="SelectSpuByBarcode_testCase1" time="0.606"/>
+  <testcase classname="com.procurement.controller.httptest.SelectSpuByBarcode_HttpTest" name="SelectSpuByBarcode_testCase2" time="0.942"/>
+  <testcase classname="com.procurement.controller.httptest.SelectSpuById_HttpTest" name="selectSpuById_testCase1" time="0.014"/>
+  <testcase classname="com.procurement.controller.httptest.SelectSpuById_HttpTest" name="selectSpuById_testcase2" time="1.987"/>
+  <testcase classname="com.procurement.controller.httptest.UpdateMaterial_HttpTest" name="createMaterial_testCase1" time="0.308"/>
+  <testcase classname="com.procurement.controller.httptest.UpdateMaterial_HttpTest" name="createMaterial_testCase2" time="0.014"/>
+  <testcase classname="com.procurement.controller.httptest.UploadDiff_HttpTest" name="UploadDiff_testCase1" time="0.013"/>
+  <testcase classname="com.procurement.controller.httptest.UploadDiff_HttpTest" name="UploadDiff_testCase2" time="0.015">
+    <failure message="接口返回的entry不为&apos;null&apos;.......... expected [{&quot;modifyTime&quot;:&quot;2017-07-27 19:39:00&quot;,&quot;list&quot;:[{&quot;matterUrl&quot;:&quot;assets/voice/07/20/n_1500531565405_1720.mp3&quot;,&quot;gmtModify&quot;:null,&quot;spu&quot;:&quot;&quot;,&quot;id&quot;:28,&quot;gmtCreate&quot;:&quot;2017-07-27 19:39:00&quot;,&quot;matterId&quot;:62}]}] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 接口返回的entry不为&apos;null&apos;.......... expected [{&quot;modifyTime&quot;:&quot;2017-07-27 19:39:00&quot;,&quot;list&quot;:[{&quot;matterUrl&quot;:&quot;assets/voice/07/20/n_1500531565405_1720.mp3&quot;,&quot;gmtModify&quot;:null,&quot;spu&quot;:&quot;&quot;,&quot;id&quot;:28,&quot;gmtCreate&quot;:&quot;2017-07-27 19:39:00&quot;,&quot;matterId&quot;:62}]}] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.procurement.controller.httptest.UploadDiff_HttpTest.UploadDiff_testCase2(UploadDiff_HttpTest.java:50)
+</failure>
+    <system-out>返回结果信息：查到新的更新
+</system-out>
+  </testcase>
+</testsuite>
