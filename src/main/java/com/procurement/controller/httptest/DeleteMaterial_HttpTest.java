@@ -26,10 +26,10 @@ public class DeleteMaterial_HttpTest extends TestBase{
     String fodderId = null;
     String condition = null;
 
-//    @BeforeTest
-//    public void setUp() {
-//        login("15158116767","seller","qwe123");
-//    }
+    @BeforeTest
+    public void setUp() {
+        login("15158116767","seller","qwe123");
+    }
 
     @DataProvider(name = "csvDataProvider")
     public static Object[][] data() throws IOException {
@@ -68,9 +68,9 @@ public class DeleteMaterial_HttpTest extends TestBase{
     public void DeleteMaterial_testCase2(){
 
         Map<String, Object> deleteMaterialParam2 = new HashMap<String, Object>();
-        deleteMaterialParam2.put("id","999999");
+        deleteMaterialParam2.put("id","9999991");
         String deleteMaterialResult = HttpUtil.sendPostJson(HttpPostUrlEnum.DELETEMATERIALBYID_URL.getUrl(),deleteMaterialParam2);
-        HttpResult.checkStatus(deleteMaterialResult,false);
+        HttpResult.checkStatus(deleteMaterialResult,true);
 
     }
 

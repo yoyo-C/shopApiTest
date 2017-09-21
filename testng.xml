@@ -25,4 +25,9 @@
             <class name="com.procurement.controller.httptest.UploadDiff_HttpTest"/>
         </classes>
     </test>
+    <test name="member" >
+        <classes>
+            <class name="com.member.controller.httptest.AddApi_HttpTest"/>
+        </classes>
+    </test>
 </suite>

@@ -34,13 +34,16 @@ public class CreateShop_HttpTest extends TestBase {
         return getData("/Users/Bytes/Documents/workspace/testCodes/shop-test/src/main/resources/testdata/CreateShop_HttpTest/createShop.csv");
     }
 
+
     @Test(dataProvider = "csvDataProvider")
     public void createShop_TestCase1(final String address,final String areaCode, final String city, final String cityCode,
                            final String mobile, final String provinceCode, final String shopName,final String type,
                            final String ownerName){
 //      成功创建店铺
         try {
-                this.shopName = shopName;
+            ElephDBUtils.deleteDB("shop","shop_name='" + shopName + "'","shop");
+
+            this.shopName = shopName;
                 preParam(address, areaCode, city, cityCode, mobile, provinceCode, shopName, type, ownerName);
                 String createShopResult = HttpUtil.sendPostJson(HttpPostUrlEnum.CREATE_SHOP_URL.getUrl(), createShopParams);
                 shopId = HttpResult.getEntry(createShopResult);

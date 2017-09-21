@@ -25,11 +25,11 @@ public class SelectSpuById_HttpTest extends TestBase {
 
     String fodderId = null;
 
-//    @BeforeTest
-//    public void setUp() {
-//
-//        login("15158116767","seller","qwe123");
-//    }
+    @BeforeTest
+    public void setUp() {
+
+        login("15158116767","seller","qwe123");
+    }
 
     @Test
     public void selectSpuById_testCase1(){
@@ -53,6 +53,7 @@ public class SelectSpuById_HttpTest extends TestBase {
         createMaterialParam.put("activityName",activityName);
         createMaterialParam.put("matterUrl",materialUrl);
         createMaterialParam.put("list",spuList);
+        createMaterialParam.put("deviceIds","");
 
 //      创建素材
         String createMaterialResult = HttpUtil.sendPostJson(HttpPostUrlEnum.CREATEMATERIAL_URL.getUrl(),createMaterialParam);
