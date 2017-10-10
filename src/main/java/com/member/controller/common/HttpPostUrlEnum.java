@@ -10,7 +10,13 @@ public enum HttpPostUrlEnum {
 
     UPDATEAPI_URL("/member/api/updateApi.do","更新api"),
 
-    DELETEAPI_URL("/member/api/deleteApiById.do","删除api");
+    DELETEAPI_URL("/member/api/deleteApiById.do","删除api"),
+
+    ADDAUTHORITY_URL("/member/authority/addAuthority.do","添加权限"),
+
+    DELETEAUTHORITYBYID_URL("/member/authority/deleteAuthorityById.do","删除权限"),
+
+    UPDATEAUTHORITYBYID_URL("/member/authority/updateAuthorityById.do","更新");
 
     private String url;
 

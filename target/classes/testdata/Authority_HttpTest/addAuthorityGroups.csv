@@ -1,0 +1,4 @@
+name,parentId,type,status
+apitest_addAuthGroup01,0,0,true
+apitest_addAuthGroup02,0,1,true
+apitest_addAuthGroup02,0,1,true

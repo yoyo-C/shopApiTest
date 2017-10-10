@@ -1,0 +1,5 @@
+name,parentId,type,url,modified_name
+apitest_update&deleteAuthority01,0,0,,apitest_update&deleteAuthority01_m
+apitest_update&deleteAuthority02,0,1,,apitest_update&deleteAuthority02_m
+apitest_update&deleteAuthority03,1,1,,apitest_update&deleteAuthority03_m
+apitest_update&deleteAuthority04,1,0,/crm/authority/cuser2,apitest_update&deleteAuthority04_m

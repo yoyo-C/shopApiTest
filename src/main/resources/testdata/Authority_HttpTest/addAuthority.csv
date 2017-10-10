@@ -1,0 +1,8 @@
+name,url,type,apiIds,status
+,,0,,false
+apitest_addAuthority01,,0,,false
+apitest_addAuthority02,,1,,true
+apitest_addAuthority03,/crm/authority/cuser2,0,,true
+apitest_addAuthority04,/crm/authority/cuser3,0,999999,false
+apitest_addAuthority05,/crm/authority/cuser2,0,888888,false
+apitest_addAuthority05,/crm/authority/cuser4,0,888888,true
