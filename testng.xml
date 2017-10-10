@@ -28,6 +28,14 @@
     <test name="member" >
         <classes>
             <class name="com.member.controller.httptest.AddApi_HttpTest"/>
+            <class name="com.member.controller.httptest.AddAuthority_HttpTest"/>
+            <class name="com.member.controller.httptest.DeleteAndUpdateAuthority_HttpTest"/>
+            <class name="com.member.controller.httptest.GetAllApi_HttpTest"/>
+            <class name="com.member.controller.httptest.GetAllAuthorityByParentId_HttpTest"/>
+            <class name="com.member.controller.httptest.GetAuthorityByName_HttpTest"/>
+            <class name="com.member.controller.httptest.GetAuthorityDetail_HttpTest"/>
+            <class name="com.member.controller.httptest.UpdateApi_HttpTest"/>
+
         </classes>
     </test>
 </suite>
