@@ -4,6 +4,8 @@ package com.member.controller.common;
  * Created by Bytes on 2017/9/21.
  */
 public enum HttpGetUrlEnum {
+    GETALLAUTHORITYROLE_URL("/member/authorityRole/getAllAuthorityRole.do?","获取全部角色"),
+
     GETALLAUTHORITYBYPARENTID_URL("/member/authority/getAllAuthorityByParentId.do?","查询权限"),
 
     GETAUTHORITYDETIAL_URL("/member/authority/getAuthorityDetail.do?","根据权限id查询权限"),

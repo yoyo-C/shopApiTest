@@ -56,8 +56,9 @@ public class HttpResult {
             return true;
         }
         else{
-            log.error( "checkStatus入参非json格式>>>>>>\n");
-            return false;
+//            log.error( "checkStatus入参非json格式>>>>>>\n");
+            throw new Error("checkStatus入参非json格式>>>>>>\n");
+//            return false;
         }
 
 

@@ -27,6 +27,8 @@ public class DeleteAndUpdateAuthority_HttpTest extends TestBase{
 
     List<String> ids = new ArrayList<String>();
 
+    String parentId_DB = null;
+
     @DataProvider(name = "csvDataProvider")
     public Object[][] data() throws IOException{
         return getData("/Users/Bytes/Documents/workspace/testCodes/shop-test/src/main/resources/testdata/Authority_HttpTest/updateAndDeleteAuthority.csv");
@@ -34,7 +36,7 @@ public class DeleteAndUpdateAuthority_HttpTest extends TestBase{
 
     @BeforeTest
     public void setUp(){
-        login("15158116767","seller","qwe123");
+        login("15158116767","crm","qwe123");
     }
 
     @Test(dataProvider = "csvDataProvider")
@@ -48,7 +50,7 @@ public class DeleteAndUpdateAuthority_HttpTest extends TestBase{
         if(parentId.equals("1")){
             params.put("url",url);
             params.put("apiIds","");
-            String parentId_DB = ElephDBUtils.selectStrDB("authority","authority_id","parent_id = 0 and type ="+type+" limit 1","member");
+            parentId_DB = ElephDBUtils.selectStrDB("authority","authority_id","parent_id = 0 and type ="+type+" limit 1","member");
             params.put("parentId",parentId_DB);
         }
         else {
@@ -71,8 +73,16 @@ public class DeleteAndUpdateAuthority_HttpTest extends TestBase{
         HttpResult.checkHttpSucess(updateResult);
 
     }
+
     @Test(dependsOnMethods = "updateAuthority_case1")
-    public void deleteAuthority(){
+    public void deleteAuthority_cannotDelete(){
+        Map<String,Object> param = new HashMap<String, Object>();
+        param.put("authorityId",parentId_DB);
+        String deleteResult1 = HttpUtil.sendPostJson(HttpPostUrlEnum.DELETEAUTHORITYBYID_URL.getUrl(),param);
+        HttpResult.checkStatus(deleteResult1,false);
+    }
+    @Test(dependsOnMethods = "updateAuthority_case1")
+    public void deleteAuthority_canDelete(){
         for(String id:ids){
             Map<String,Object> param = new HashMap<String, Object>();
             param.put("authorityId",id);

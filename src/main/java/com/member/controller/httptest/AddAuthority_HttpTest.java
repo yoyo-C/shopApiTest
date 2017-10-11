@@ -25,9 +25,11 @@ public class AddAuthority_HttpTest extends TestBase{
 
     List<String> names = new ArrayList<String>();
 
+    String apiId = null;
+
     @BeforeTest
     public void setUp(){
-        login("15158116767","seller","qwe123");
+        login("15158116767","crm","qwe123");
     }
 
     @DataProvider(name = "csvDataProvider_createAuthorityGroup")
@@ -63,8 +65,8 @@ public class AddAuthority_HttpTest extends TestBase{
         params_addAuths.put("url",url);
         params_addAuths.put("type",type);
         if(apiIds.equals("888888")){
-            String api_id = ElephDBUtils.selectStrDB("api", "api_id", "is_delete = 0 limit 1", "member");
-            params_addAuths.put("apiIds",api_id);
+            apiId = ElephDBUtils.selectStrDB("api", "api_id", "is_delete = 0 limit 1", "member");
+            params_addAuths.put("apiIds",apiId);
         }
         else {
             params_addAuths.put("apiIds",apiIds);
@@ -82,6 +84,14 @@ public class AddAuthority_HttpTest extends TestBase{
             names.add(name);
         }
 
+    }
+
+    @Test(dependsOnMethods = "addAuthority")
+    public void delete_api(){
+        Map<String,Object> param = new HashMap<String, Object>();
+        param.put("apiId", apiId);
+        String result = HttpUtil.sendPostJson(HttpPostUrlEnum.DELETEAPI_URL.getUrl(),param);
+        HttpResult.checkStatus(result,false);
     }
 
 

@@ -16,7 +16,13 @@ public enum HttpPostUrlEnum {
 
     DELETEAUTHORITYBYID_URL("/member/authority/deleteAuthorityById.do","删除权限"),
 
-    UPDATEAUTHORITYBYID_URL("/member/authority/updateAuthorityById.do","更新");
+    UPDATEAUTHORITYBYID_URL("/member/authority/updateAuthorityById.do","更新"),
+
+    ADDAUTHORITYROLE_URL("/member/authorityRole/addAuthorityRole.do","添加角色"),
+
+    UPDATEAUTHORITYROLEBYID_URL("/member/authorityRole/updateAuthorityRoleById.do","更新角色"),
+
+    DELETEAUTHORITYROLEBYID_URL("/member/authorityRole/deleteAuthorityRoleById.do","删除角色");
 
     private String url;
 

@@ -1,0 +1,7 @@
+name,platform,authorityIds,status
+,1,,false
+apitest_addRole06,,,false
+apitest_addRole01,1,,true
+apitest_addRole02,2,,true
+apitest_addRole03,3,,true
+apitest_addRole04,1,1,true

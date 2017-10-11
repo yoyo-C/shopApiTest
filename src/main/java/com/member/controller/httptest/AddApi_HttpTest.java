@@ -29,7 +29,7 @@ public class AddApi_HttpTest extends TestBase {
 
     @BeforeTest
     public void setUp(){
-        login("15158116767","seller","qwe123");
+        login("15158116767","crm","qwe123");
     }
 
     @DataProvider(name = "csvDataProvider_addApi")

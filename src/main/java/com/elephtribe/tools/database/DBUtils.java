@@ -4,6 +4,7 @@ import au.com.bytecode.opencsv.CSVReader;
 import com.elephtribe.tools.StringUtils;
 import com.elephtribe.tools.dataprovider.CsvParamHandler;
 import com.elephtribe.tools.dataprovider.CsvParser;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.InputStream;
@@ -19,6 +20,8 @@ import java.util.*;
  * Created by Bytes on 2017/7/18.
  */
 public class DBUtils {
+    private static final Logger logger = Logger.getLogger(DBUtils.class);
+
     private static ThreadLocal<Integer> argsIndex = new ThreadLocal();
 
     private static ThreadLocal<Connection> lockDBConnectionHolder = new ThreadLocal();
@@ -106,8 +109,8 @@ public class DBUtils {
         try {
             resultSet = conn.executeUpdate(tableName,sql,DBName);
         } catch (Exception e) {
-            /*if (logger.isErrorEnabled())
-                logger.error("数据库操作出错。", e);*/
+//            if (logger.isErrorEnabled())
+                logger.error("数据库操作出错。", e);
             return -1;
         } finally {
             conn.close();

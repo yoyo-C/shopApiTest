@@ -263,8 +263,9 @@ public class ElephDBUtils {
     public static void deleteDB(String tableName, String[] conditions,String DBName) {
 
         if (null == conditions || 0 == conditions.length) {
-            System.out.println("删除 " + tableName + " 数据记录，参数错误");
-            return;
+//            System.out.println("删除 " + tableName + " 数据记录，参数错误");
+            throw new Error("删除 " + tableName + " 数据记录，参数错误");
+//            return;
         }
 
         String tempConditonString = genConditionSql(conditions);
