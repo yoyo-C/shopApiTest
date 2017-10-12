@@ -10,7 +10,9 @@ public enum HttpGetUrlEnum {
 
     GETAUTHORITYDETIAL_URL("/member/authority/getAuthorityDetail.do?","根据权限id查询权限"),
 
-    GETAUTHORITYBYNAME_URL("/member/authority/getAuthorityByName.do?","根据名称查询权限");
+    GETAUTHORITYBYNAME_URL("/member/authority/getAuthorityByName.do?","根据名称查询权限"),
+
+    DELETEAUTHORITYGROUP_URL("/member/cuserGroup/delete.do?","删除用户组");
 
     private String url;
 

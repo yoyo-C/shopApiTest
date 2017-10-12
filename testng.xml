@@ -38,6 +38,8 @@
             <class name="com.member.controller.httptest.AddAuthorityRole_HttpTest"/>
             <class name="com.member.controller.httptest.GetAllAuthorityRole_HttpTest"/>
             <class name="com.member.controller.httptest.UpdateAndDeleteAuthorityRole_HttpTest"/>
+            <class name="com.member.controller.httptest.userGroup_HttpTest"/>
+
 
         </classes>
     </test>

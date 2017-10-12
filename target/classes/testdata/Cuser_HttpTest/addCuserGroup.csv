@@ -1,0 +1,6 @@
+name,platform,roleIds,status
+,,,false
+,1,,false
+apitest_addUserGroup00,,,false
+apitest_addUserGroup01,2,1,true
+apitest_addUserGroup01,2,,false

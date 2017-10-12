@@ -22,7 +22,13 @@ public enum HttpPostUrlEnum {
 
     UPDATEAUTHORITYROLEBYID_URL("/member/authorityRole/updateAuthorityRoleById.do","更新角色"),
 
-    DELETEAUTHORITYROLEBYID_URL("/member/authorityRole/deleteAuthorityRoleById.do","删除角色");
+    DELETEAUTHORITYROLEBYID_URL("/member/authorityRole/deleteAuthorityRoleById.do","删除角色"),
+
+    ADDUSERGROUP_URL("/member/cuserGroup/add.do","添加用户组"),
+
+    QUERYUSERGROUP_URL("/member/cuserGroup/query.do","查询用户组"),
+
+    UPDATEUSERGROUP_URL("/member/cuserGroup/update.do","更新用户组");
 
     private String url;
 
