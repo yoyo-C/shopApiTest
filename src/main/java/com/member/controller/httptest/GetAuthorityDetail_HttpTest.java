@@ -14,11 +14,11 @@ import org.testng.annotations.Test;
  */
 public class GetAuthorityDetail_HttpTest extends TestBase{
     public static final Logger log = Logger.getLogger(GetAuthorityDetail_HttpTest.class);
-
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+//
+//    @BeforeTest
+//    public void setUp(){
+//        login("15158116767","crm","qwe123");
+//    }
 
     @Test
     public void getAuthorityDetail_case1() {

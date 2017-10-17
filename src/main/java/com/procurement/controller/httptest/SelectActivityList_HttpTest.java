@@ -7,6 +7,7 @@ import com.elephtribe.tools.httputils.HttpUtil;
 import com.procurement.controller.common.HttpGetUrlEnum;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 /**
@@ -14,12 +15,10 @@ import org.testng.annotations.Test;
  */
 public class SelectActivityList_HttpTest extends TestBase{
     private static final Logger log = Logger.getLogger(SelectActivityList_HttpTest.class);
-
-//    @BeforeTest
-//    public void setUp() {
-//
-//        login("15158116767","seller","qwe123");
-//    }
+    @BeforeTest
+    public void setUp() {
+        login("18390830656","qwe123");
+    }
 
     @Test
     public void selectActivityList_testCase1(){

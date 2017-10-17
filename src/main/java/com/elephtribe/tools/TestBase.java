@@ -15,14 +15,13 @@ public class TestBase extends CsvData {
     public static final Logger log = Logger.getLogger("TestBase.class");
 
 
-    public void login(String mobile, String role, String password){
-        if(mobile == null || role == null || password == null){
+    public void login(String mobile,String password){
+        if(mobile == null|| password == null){
             return;
         }
         Map<String, Object> loginParams = new HashMap<String, Object>();
 
         loginParams.put("mobile", mobile);
-        loginParams.put("role", role);
         loginParams.put("password", password);
 
         try {
@@ -46,7 +45,7 @@ public class TestBase extends CsvData {
 
         logoutParams.put("role", role);
 
-        String logoutResult = HttpUtil.sendPostJson("http://daily.elephtribe.com/member/login.do", logoutParams);
+        String logoutResult = HttpUtil.sendPostJson("http://daily.crm.elephtribe.com/api/member/logout.do", logoutParams);
 
         HttpResult.checkStatus(logoutResult, true);
         System.out.println(">>>>>成功退出");

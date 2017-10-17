@@ -29,12 +29,6 @@ public class QueryShopById_HttpTest extends TestBase{
     public static Object[][] data() throws IOException {
         return getData("/Users/Bytes/Documents/workspace/testCodes/shop-test/src/main/resources/testdata/CreateShop_HttpTest/createShop.csv");
     }
-    @BeforeTest
-    public void setUp() {
-
-        login("15158116767","crm","qwe123");
-
-    }
 
     @Test(dataProvider = "csvDataProvider")
     public void QueryShopById_testCase1(final String address,final String areaCode, final String city, final String cityCode,

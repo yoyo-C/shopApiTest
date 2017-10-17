@@ -41,7 +41,7 @@ public enum HttpPostUrlEnum {
 
 
     public String getUrl() {
-        String server_prefix = "http://daily.elephtribe.com";
+        String server_prefix = "http://daily.crm.elephtribe.com/api";
         return server_prefix + url;
     }
 

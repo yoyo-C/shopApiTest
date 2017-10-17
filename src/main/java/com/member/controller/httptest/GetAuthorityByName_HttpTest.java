@@ -15,10 +15,10 @@ import org.testng.annotations.Test;
 public class GetAuthorityByName_HttpTest extends TestBase{
     public static final Logger log = Logger.getLogger(GetAuthorityByName_HttpTest.class);
 
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+//    @BeforeTest
+//    public void setUp(){
+//        login("15158116767","crm","qwe123");
+//    }
 
 
     @Test

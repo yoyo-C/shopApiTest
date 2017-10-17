@@ -26,10 +26,9 @@ public class AddApi_HttpTest extends TestBase {
 
     Map<String, Object> param =  new HashMap<String, Object>();
     List<String> ids = new ArrayList<String>();
-
     @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
+    public void setUp() {
+        login("18390830656","qwe123");
     }
 
     @DataProvider(name = "csvDataProvider_addApi")

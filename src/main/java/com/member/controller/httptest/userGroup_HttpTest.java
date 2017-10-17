@@ -29,10 +29,8 @@ public class userGroup_HttpTest extends TestBase{
 
     String userGroupName = null;
 
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+    String roleId = null;
+
 
     @DataProvider(name = "csvDataProvider_addUserGroup")
     private Object[][] data_addUserGroup() throws IOException{
@@ -51,7 +49,7 @@ public class userGroup_HttpTest extends TestBase{
         params.put("name", name);
         params.put("platform", platform);
         if (roleIds.equals("1")) {
-            String roleId = ElephDBUtils.selectStrDB("authority_role", "role_id", "platform=" + platform + " limit 1", "member");
+            roleId = ElephDBUtils.selectStrDB("authority_role", "role_id", "platform=" + platform + " limit 1", "member");
             int[] id = new int[1];
             int roleId_int = Integer.valueOf(roleId);
             id[0] = roleId_int;
@@ -113,6 +111,14 @@ public class userGroup_HttpTest extends TestBase{
     public void deleteUserGroup(){
         String result = HttpUtil.sendGet(HttpGetUrlEnum.DELETEAUTHORITYGROUP_URL.getUrl()+"cuserGroupId="+userGroupId);
         HttpResult.checkHttpSucess(result);
+    }
+
+    @Test(dependsOnMethods = "addUserGroup_case1")
+    public void deleteRole() {
+        params.clear();
+        params.put("roleId", roleId);
+        String result_deleteRole = HttpUtil.sendPostJson(HttpPostUrlEnum.DELETEAUTHORITYROLEBYID_URL.getUrl(), params);
+        HttpResult.checkStatus(result_deleteRole, false);
     }
 
     @AfterTest

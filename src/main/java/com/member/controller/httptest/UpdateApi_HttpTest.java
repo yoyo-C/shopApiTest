@@ -25,10 +25,10 @@ public class UpdateApi_HttpTest extends TestBase{
     Map<String, Object> param = new HashMap<String, Object>();
     String id = null;
 
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+//    @BeforeTest
+//    public void setUp(){
+//        login("15158116767","crm","qwe123");
+//    }
 
 
     @DataProvider(name = "csvDataProvider_addApi")

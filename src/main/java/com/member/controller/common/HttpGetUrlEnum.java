@@ -24,7 +24,7 @@ public enum HttpGetUrlEnum {
     }
 
     public String getUrl(){
-        String server_prefix = "http://daily.elephtribe.com";
+        String server_prefix = "http://daily.crm.elephtribe.com/api";
         return server_prefix + url;
     }
 
@@ -33,7 +33,7 @@ public enum HttpGetUrlEnum {
     }
 
     public String getUrl(int pageNow, int pageSize) {
-        String server_prefix = "http://daily.elephtribe.com";
+        String server_prefix = "http://daily.crm.elephtribe.com/api";
         return server_prefix + url + "pageNow=" + pageNow + "&pageSize=" + pageSize;
     }
 }

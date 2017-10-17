@@ -28,8 +28,8 @@ public class AddAuthority_HttpTest extends TestBase{
     String apiId = null;
 
     @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
+    public void setUp() {
+        login("18390830656","qwe123");
     }
 
     @DataProvider(name = "csvDataProvider_createAuthorityGroup")

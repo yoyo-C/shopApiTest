@@ -26,10 +26,10 @@ public class DeleteMaterial_HttpTest extends TestBase{
     String fodderId = null;
     String condition = null;
 
-//    @BeforeTest
-//    public void setUp() {
-//        login("15158116767","seller","qwe123");
-//    }
+    @BeforeTest
+    public void setUp() {
+        login("18390830656","qwe123");
+    }
 
     @DataProvider(name = "csvDataProvider")
     public static Object[][] data() throws IOException {

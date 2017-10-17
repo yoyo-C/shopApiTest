@@ -17,12 +17,6 @@ public class QueryShopByKeys_HttpTest extends TestBase{
     private static Logger log = Logger.getLogger(QueryShopByKeys_HttpTest.class);
 
 
-//    public void setUp() {
-//
-//        login("15158116767","seller","qwe123");
-//
-//    }
-
 
     @Test(dataProvider = "csvDataProvider")
     public void QueryShopByKeys_testCase1() {

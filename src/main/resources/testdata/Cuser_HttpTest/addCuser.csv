@@ -1,0 +1,12 @@
+realName,mobile,password,platform,cuserGroupId,roleId,status
+,,,,,,false
+name,,qwe123,2,1,1,false
+name,15100000000,qwe123,,1,1,false
+name,15100000000,qwe123,2,,1,false
+name,15100000000,,2,1,1,false
+apitest_addUser01,15100000000,qwe123,2,1,,true
+apitest_addUser01,15100000000,qwe123,2,1,1,true
+
+
+
+

@@ -26,11 +26,11 @@ public class AddAuthorityRole_HttpTest extends TestBase{
     Map<String, Object> param = new HashMap<String, Object>();
 
     List<String> names = new ArrayList<String>();
-
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+//
+//    @BeforeTest
+//    public void setUp(){
+//        login("15158116767","qwe123");
+//    }
 
     @DataProvider(name = "csvDataProvider_addRole")
     public Object[][] Data() throws IOException{

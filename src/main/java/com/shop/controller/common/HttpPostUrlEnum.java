@@ -11,7 +11,7 @@ public enum HttpPostUrlEnum {
 
     QUERY_SHOP_BY_USERID_URL("/shop/queryShopByUserId","根据用户ID查询店铺信息","JSON"),
 
-    LOGIN_URL("/member/login.do","登录","JSON"),
+    LOGIN_URL("/member/clogin.do","登录","JSON"),
 
     QUERY_SHOP_BY_KEYS_URL("/queryShopByKeys","查询门店信息","JSON");
 
@@ -28,7 +28,7 @@ public enum HttpPostUrlEnum {
     }
 
     public String getUrl() {
-        String server_prefix = "http://daily.elephtribe.com";
+        String server_prefix = "http://daily.crm.elephtribe.com/api";
         return server_prefix + url;
     }
 

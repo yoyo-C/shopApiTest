@@ -27,7 +27,7 @@ public class QueryActivityCreative_HttpTest extends TestBase {
 
     @BeforeTest
     public void setUp() {
-        login("15158116767","crm","qwe123");
+        login("18390830656","qwe123");
     }
 
     @Test

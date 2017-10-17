@@ -15,10 +15,9 @@ import org.testng.annotations.Test;
  */
 public class AuthorList_HttpTest extends TestBase {
     private static final Logger log = Logger.getLogger(AuthorList_HttpTest.class);
-
     @BeforeTest
     public void setUp() {
-        login("15158116767","crm","qwe123");
+        login("18390830656","qwe123");
     }
 
     @Test

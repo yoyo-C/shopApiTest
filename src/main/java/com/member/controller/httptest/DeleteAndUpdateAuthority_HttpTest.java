@@ -34,10 +34,10 @@ public class DeleteAndUpdateAuthority_HttpTest extends TestBase{
         return getData("/Users/Bytes/Documents/workspace/testCodes/shop-test/src/main/resources/testdata/Authority_HttpTest/updateAndDeleteAuthority.csv");
     }
 
-    @BeforeTest
-    public void setUp(){
-        login("15158116767","crm","qwe123");
-    }
+//    @BeforeTest
+//    public void setUp(){
+//        login("15158116767","crm","qwe123");
+//    }
 
     @Test(dataProvider = "csvDataProvider")
     public void updateAuthority_case1(final String name,final String parentId,final String type,final String url,
