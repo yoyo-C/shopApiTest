@@ -28,7 +28,13 @@ public enum HttpPostUrlEnum {
 
     QUERYUSERGROUP_URL("/member/cuserGroup/query.do","查询用户组"),
 
-    UPDATEUSERGROUP_URL("/member/cuserGroup/update.do","更新用户组");
+    UPDATEUSERGROUP_URL("/member/cuserGroup/update.do","更新用户组"),
+
+    ADD_URL("/member/cuser/add.do","添加用户"),
+
+    QUERYUSER_URL("/member/cuser/query.do","查询用户"),
+
+    UPDATEUSER_URL("/member/cuser/update.do","跟新用户");
 
     private String url;
 

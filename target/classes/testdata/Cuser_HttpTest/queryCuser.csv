@@ -1,0 +1,4 @@
+mobile,id,cuserGroupId,platform,realName,pageNo,pageSize,result
+,,,,,1,1,true
+,,,,,0,1,false
+15100000000,,,2,apitest_addUser01,1,10,true

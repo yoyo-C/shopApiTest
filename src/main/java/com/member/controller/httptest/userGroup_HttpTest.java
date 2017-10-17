@@ -7,6 +7,7 @@ import com.elephtribe.tools.httputils.HttpResult;
 import com.elephtribe.tools.httputils.HttpUtil;
 import com.member.controller.common.HttpGetUrlEnum;
 import com.member.controller.common.HttpPostUrlEnum;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -92,6 +93,12 @@ public class userGroup_HttpTest extends TestBase{
         String result = HttpUtil.sendPostJson(HttpPostUrlEnum.QUERYUSERGROUP_URL.getUrl(),params);
 
         HttpResult.checkStatus(result, http_status);
+    }
+
+    @Test(dependsOnMethods = "addUserGroup_case1")
+    public void queryByCUserGroupId(){
+        String getRoleByGroupId_result = HttpUtil.sendGet(HttpGetUrlEnum.QUERYBYCUSERGROUPID_URL.getUrl() + "cUserGroupId=" +userGroupId);
+        HttpResult.checkHttpSucess(getRoleByGroupId_result);
     }
 
     @Test(dependsOnMethods = "addUserGroup_case1")

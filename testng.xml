@@ -39,7 +39,7 @@
             <class name="com.member.controller.httptest.GetAllAuthorityRole_HttpTest"/>
             <class name="com.member.controller.httptest.UpdateAndDeleteAuthorityRole_HttpTest"/>
             <class name="com.member.controller.httptest.userGroup_HttpTest"/>
-
+            <class name="com.member.controller.httptest.Cuser_HttpTest"/>
 
         </classes>
     </test>

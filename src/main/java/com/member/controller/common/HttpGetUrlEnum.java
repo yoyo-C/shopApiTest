@@ -12,7 +12,13 @@ public enum HttpGetUrlEnum {
 
     GETAUTHORITYBYNAME_URL("/member/authority/getAuthorityByName.do?","根据名称查询权限"),
 
-    DELETEAUTHORITYGROUP_URL("/member/cuserGroup/delete.do?","删除用户组");
+    DELETEAUTHORITYGROUP_URL("/member/cuserGroup/delete.do?","删除用户组"),
+
+    QUERYBYCUSERGROUPID_URL("/member/authorityRole/queryByCUserGroupId.do?","根据用户群id获取用户信息"),
+
+    DISABLEUSER_URL("/member/cuser/disable.do?cuserId=","禁用用户"),
+
+    ENABLEUSER_URL("/member/cuser/enable.do?cuserId=","启用用户");
 
     private String url;
 
