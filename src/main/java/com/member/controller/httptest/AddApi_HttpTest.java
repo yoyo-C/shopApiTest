@@ -13,10 +13,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Bytes on 2017/9/21.
@@ -28,7 +25,7 @@ public class AddApi_HttpTest extends TestBase {
     List<String> ids = new ArrayList<String>();
     @BeforeTest
     public void setUp() {
-        login("18390830656","qwe123");
+        login("18390830652","qwe123",1);
     }
 
     @DataProvider(name = "csvDataProvider_addApi")
@@ -41,6 +38,7 @@ public class AddApi_HttpTest extends TestBase {
 //      准备参数
         preParam(name, system, type, url);
         boolean status_csv = Boolean.valueOf(status);
+
 
 //      增加api
         String result = HttpUtil.sendPostJson(HttpPostUrlEnum.ADDAPI_URL.getUrl(),param);

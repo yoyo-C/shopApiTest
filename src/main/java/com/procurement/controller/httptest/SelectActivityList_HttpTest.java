@@ -17,7 +17,7 @@ public class SelectActivityList_HttpTest extends TestBase{
     private static final Logger log = Logger.getLogger(SelectActivityList_HttpTest.class);
     @BeforeTest
     public void setUp() {
-        login("18390830656","qwe123");
+        login("18390830656","qwe123",1);
     }
 
     @Test

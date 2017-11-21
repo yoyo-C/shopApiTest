@@ -53,13 +53,13 @@ public enum HttpPostUrlEnum {
         return  type;
     }
 
-    public static String getTypeByUrl(String url){
-
-        for (com.shop.controller.common.HttpPostUrlEnum httpPostUrlEnum: com.shop.controller.common.HttpPostUrlEnum.values()){
-            if (httpPostUrlEnum.getUrl().equals(url)){
-                return  httpPostUrlEnum.getType();
-            }
-        }
-        return  null;
-    }
+//            public static String getTypeByUrl(String url){
+//
+//                for (com.shop.controller.common.HttpPostUrlEnum httpPostUrlEnum: com.shop.controller.common.HttpPostUrlEnum.values()){
+//                    if (httpPostUrlEnum.getUrl().equals(url)){
+//                        return  httpPostUrlEnum.getType();
+//                    }
+//                }
+//                return  null;
+//            }
 }

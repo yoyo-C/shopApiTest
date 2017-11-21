@@ -5,11 +5,9 @@ import com.elephtribe.tools.TestBase;
 import com.elephtribe.tools.httputils.HttpResult;
 import com.elephtribe.tools.httputils.HttpUtil;
 import com.procurement.controller.common.HttpPostUrlEnum;
-import com.shop.controller.httptest.CreateShop_HttpTest;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,7 +19,7 @@ import java.util.Map;
  * Created by Bytes on 2017/7/21.
  */
 public class UpdateMaterial_HttpTest extends TestBase{
-    private static final Logger log = Logger.getLogger(CreateShop_HttpTest.class);
+    private static final Logger log = Logger.getLogger(UpdateMaterial_HttpTest.class);
 
     Map<String, Object> createMaterialParam = new HashMap<String, Object>();
     String fodderId = null;

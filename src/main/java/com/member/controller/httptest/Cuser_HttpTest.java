@@ -8,6 +8,7 @@ import com.member.controller.common.HttpGetUrlEnum;
 import com.member.controller.common.HttpPostUrlEnum;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -30,11 +31,11 @@ public class Cuser_HttpTest extends TestBase{
     String groupId = null;
 
     String cMobile = null;
-//
-//    @BeforeTest
-//    private void setUp(){
-//        login("15158116767","crm","qwe123");
-//    }
+
+    @BeforeTest
+    private void setUp(){
+        login("18390830652","qwe123",1);
+    }
 
     @DataProvider(name = "csvDataProvider_addCuser")
     public Object[][] data_addCuser() throws IOException{

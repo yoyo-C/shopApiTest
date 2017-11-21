@@ -5,10 +5,8 @@ import com.elephtribe.tools.TestBase;
 import com.elephtribe.tools.httputils.HttpResult;
 import com.elephtribe.tools.httputils.HttpUtil;
 import com.procurement.controller.common.HttpPostUrlEnum;
-import com.shop.controller.httptest.CreateShop_HttpTest;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;

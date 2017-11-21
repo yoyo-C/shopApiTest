@@ -26,7 +26,7 @@ public class SelectSpuById_HttpTest extends TestBase {
     String fodderId = null;
     @BeforeTest
     public void setUp() {
-        login("18390830656","qwe123");
+        login("18390830652","qwe123",1);
     }
 
     @Test

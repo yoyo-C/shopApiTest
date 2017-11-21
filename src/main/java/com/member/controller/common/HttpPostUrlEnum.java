@@ -4,6 +4,7 @@ package com.member.controller.common;
  * Created by Bytes on 2017/9/21.
  */
 public enum HttpPostUrlEnum {
+
     GETALLAPI_URL("/member/api/getAllApi.do","查询api列表"),
 
     ADDAPI_URL("/member/api/addApi.do","添加api"),

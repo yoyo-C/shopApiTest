@@ -29,7 +29,7 @@ public class AddAuthority_HttpTest extends TestBase{
 
     @BeforeTest
     public void setUp() {
-        login("18390830656","qwe123");
+        login("18390830656","qwe123",1);
     }
 
     @DataProvider(name = "csvDataProvider_createAuthorityGroup")

@@ -25,10 +25,10 @@ public class CreateActivity_HttpTest extends TestBase{
     Map<String, Object> param = new HashMap<String, Object>();
     String id = null;
 
-//    @BeforeTest
-//    public void setUp() {
-//        login("15158116767","crm","qwe123");
-//    }
+    @BeforeTest
+    public void setUp() {
+        login("18390830652","qwe123",1);
+    }
 
     @DataProvider(name = "csvDataProvider_createActivity")
     public static Object[][] data1() throws IOException {
